@@ -9,3 +9,5 @@
 # Licence
 
 Read Licence.txt
+
+Unityのスクリプトってライセンスどうなるの？
