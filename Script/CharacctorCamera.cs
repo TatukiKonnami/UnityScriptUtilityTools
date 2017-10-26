@@ -6,11 +6,9 @@ using UnityEngine;
 public class CharacctorCamera : MonoBehaviour {
 
     [SerializeField] private Vector2 mousePosition;
-
     public static Vector3 vec;
     public static float moveSpeed = 4.0F;
 
-    //   // Use this for initialization
     void Start () {
         vec = Vector3.zero;
     }
@@ -27,7 +25,6 @@ public class CharacctorCamera : MonoBehaviour {
     /*カメラの移動方向*/
     void CameraMove()
     {
-        
         if (Input.GetKey(KeyCode.W)) vec.z += 1;       
         if (Input.GetKey(KeyCode.S)) vec.z -= 1;      
         if (Input.GetKey(KeyCode.A)) vec.x -= 1;
@@ -66,6 +63,5 @@ public class CharacctorCamera : MonoBehaviour {
             CharacctorCamera.vec = Vector3.zero;
             CharacctorCamera.moveSpeed = 4.0F;
         }
-
     }
 }
